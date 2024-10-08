@@ -1,0 +1,127 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider Animation</title>
+    <style>
+body
+{
+
+    background-color:  rgb(248, 202, 84);
+}
+.entry
+{
+    display:block;
+    margin: 40px;
+}
+#frm
+{
+    width: 27%;
+    height: 30px;
+    border: 10px;
+    border-radius: 5px;
+    display: block;
+    padding: 10px;
+    box-shadow: 0px 2px 4px black;
+}
+#btn
+{
+    width: 27%;
+    height: 40px;
+    background-color: transparent;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px black;
+    font-size: 1.2em;
+    
+}
+#btn:hover
+{
+background-color: yellow;
+font-size: 1.2em;
+transform:scale(1.3);
+transition: 1s;
+}
+        .slider-container {
+            width: 700px;
+            height: 1000px;
+            overflow: hidden;
+            
+            
+            
+            
+        }
+
+        .slider {
+            display: flex;
+            width: 1000px; /* 3 times the width of the container */
+            animation: slide 15s infinite linear;
+        }
+
+        .slider img {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+        }
+
+        @keyframes slide {
+            0% {
+                transform: translateX(0);
+            }
+            25%
+            {
+                transform: translateX(-100px);
+            }
+            45%
+            {
+                transform: translateX(-200);
+            }
+            100% {
+                transform: translateX(-2300px); /* Negative of (total width - container width) */
+            }
+        }
+
+        /* Pause animation on hover */
+        .slider-container:hover .slider {
+            animation-play-state: paused;
+        }
+        iframe
+        {
+            background-color: transparent;
+            border-color: transparent;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <iframe src="sdcont.html" align="right" width="50%" height="30%"></iframe>
+    <form class="entry">
+        <input id="frm" type="text"  placeholder="Name of the student" required><br>
+        <input id="frm" type="email" placeholder="Enter the Email address" required><br>
+        <input id="frm" type="number" placeholder="Enter the phone number" required><br>
+        <input id="frm" type="text" placeholder="Enter the subject"><br>
+        <input type="submit" id="btn"><br><br>
+        <input  id="ck" type="checkbox">I've read all the terms and Conditions of CSC<br>
+        
+                </form>
+            </div>
+            
+                
+            <iframe align="right" src="F:\project\website\images\BgremovedQRcode.png" width="40%" height="1000px"></iframe>
+
+    <div class="slider-container">
+        <div class="slider">
+            <img src="F:\project\website\images\details-slide-1.jpg" width="100%"  alt="Image 1">
+            <img src="F:\project\website\images\details-slide-2.jpg" width="100%" alt="Image 2">
+            <img src="F:\project\website\images\details-slide-3.jpg" width="100%" alt="Image 3">
+        </div>
+    
+    </div>
+
+
+
+</body>
+</html>
