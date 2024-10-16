@@ -1,60 +1,199 @@
-<html <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+
+
+<!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>CSC PAMMAL</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-        <link rel="stylesheet" href="config.css">
-    </head>
-    <body>
-        <div class="course">
-          <a href="#">  <img src="dmo.png" height="50%" width="90%"></a>
-            
+<head>
+    <title>CSC PAMMAL</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  
+}
+
+.flip-card {
+  background-color: transparent;
+  display: flex;
+  float: left;
+  padding: 15px;
+  justify-content: space-evenly;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+}
+</style>
+</head>
+<body>
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="F:\project\website\images\dmo.png" alt="Avatar" style="width:300px;height:300px;">
     </div>
-    
-    <div class="course">
-        <a href="#"> <img src="HDCAP.png" height="50%" width="90%"></a>
-        
+    <div class="flip-card-back">
+      <p>WINDOWS</p>
+      <p>MS-OFFICE</p> 
+      <p>INTERNET</p>
+    </div>
+  </div>
 </div>
 
-<div class="course">
-    <a href="#"> <img src="HDCAT.png" height="50%" width="90%"></a>
-</div>
-
-<div class="course">
-    <a href="#"> <img src="DCAP.png" height="50%" width="90%"></a>
-</div>
-
-<div class="course">
-    <a href="#">   <img src="DCAT.png" height="50%" width="90%"></a>
-</div>
-<div class="course">
-    <a href="#">   <img src="HDFD.png" height="50%" width="90%"></a>
-</div>
-<div class="course">
-    <a href="#">   <img src="ADJP.png" height="50%" width="90%"></a>
-</div>
-<div class="course">
-    <a href="#">   <img src="ADPP.png" height="50%" width="90%"></a>
-</div>
-    </body>
-    <style>
-.course
-{
-    float: left;
-    justify-content: space-between;
-    margin: 10px;
-}
-img
-{
-    box-shadow: 0px 4px 8px;
-}
-    </style>
-        </html>
+<div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="F:\project\website\images\HDCAP.png" alt="Avatar" style="width:300px;height:300px;">
+      </div>
+      <div class="flip-card-back">
+        <p>WINDOWS</p>
+        <p>MS-OFFICE</p> 
+        <p>INTERNET</p>
+        <P>C LANGUAGE</P>
+        <P>C++</P>
+        <P>PYTHON</P>
+        <P>HTML</P>
+        <P>CSS</P>
+        <p>MY SQL</p>
+      </div>
+    </div>
+  </div>
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="F:\project\website\images\HDCAT.png" alt="Avatar" style="width:300px;height:300px;">
+      </div>
+      <div class="flip-card-back">
+        <p>WINDOWS</p>
+        <p>MS-OFFICE</p> 
+        <p>INTERNET</p>
+        <P>TALLY</P>
+        <p>ADVANCE EXCEL</p>
+        <P>HTML</P>
+        <P>CSS</P>
+        <p>MY SQL</p>
+      </div>
+    </div>
+  </div>
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="F:\project\website\images\DCAT.png" alt="Avatar" style="width:300px;height:300px;">
+      </div>
+      <div class="flip-card-back">
+        <p>WINDOWS</p>
+        <p>MS-OFFICE</p> 
+        <p>INTERNET</p>
+        <P>TALLY</P>
+      </div>
+    </div>
+  </div>
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="F:\project\website\images\DCAP.png" alt="Avatar" style="width:300px;height:300px;">
+      </div>
+      <div class="flip-card-back">
+        <p>WINDOWS</p>
+        <p>MS-OFFICE</p> 
+        <p>INTERNET</p>
+        <details>ELECTIVE-I
+        <dd># C LANGUAGE</dd>
+        <dd># C++</dd>
+        ELECTIVE-II
+        <dd># PYTHON</dd>
+    </details>
+      </div>
+    </div>
+  </div>
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="F:\project\website\images\HDFD.png" alt="Avatar" style="width:300px;height:300px;">
+      </div>
+      <div class="flip-card-back">
+        <p>C LANGUAGE</p>
+        <p>C++</p> 
+        <p>PYTHON</p>
+        <p>JAVA</p>
+        <details NAME="FRONTEND">  
+            HTML 5
+            CSS 3
+            BOOTSTRAP
+        <P>ADVANCE JAVASCRIPT</P>
+        <P>REACT JS</P>
+    </details>
+        <P>MY SQL</P>
+        <P>MONGO DB</P>
+        <details> 
+            <DD>ELECTIVE-I 
+            DJANGO
+            </DD>
+            <dd>
+        ELECTIVE-II
+        SPRING BOOT
+    </dd> 
+    </details>
+      </div>
+    </div>
+  </div>
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="F:\project\website\images\ADPP.png" alt="Avatar" style="width:300px;height:300px;">
+      </div>
+      <div class="flip-card-back">
+        <p>WINDOWS</p>
+        <p>MS-OFFICE</p> 
+        <p>INTERNET</p>
+        <P> PYTHON</P>
+      </div>
+    </div>
+  </div>
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="F:\project\website\images\ADJP.png" alt="Avatar" style="width:300px;height:300px;">
+      </div>
+      <div class="flip-card-back">
+        <p>C LANGUAGE</p>
+        <p>C++</p> 
+        <p>JAVA</p>
+        <P>HTML</P>
+        <p>CSS</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
